@@ -1,0 +1,101 @@
+﻿@model AdminitracionUsuarios.ViewModels.UsuarioViewModel
+@{
+        ViewBag.Title = "Index";
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+    <div class="container">
+        <h2>Usuarios Registrados</h2>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" 
+                onclick="clearTextBox();">Agregar Usuario</button><br /><br />
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Usuario.NombreCompleto)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Usuario.Direccion)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Usuario.FechaNacimiento)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Usuario.TipoDocumento)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Usuario.NumeroDocumento)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Usuario.Pais)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Usuario.Departamento)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Usuario.Ciudad)
+                    </th>
+                    <th>
+                       
+                    </th>
+                </tr>
+            </thead>
+            <tbody class="tbody"></tbody>
+        </table>
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    @*<button type="button" class="close" data-dissmiss="modal"><span aria-hidden="true">×</span></button>*@
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title" id="myModalLabel">Agregar Usuario</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <input type="hidden" id="UserId" />
+                    <div class="form-group">
+                        <label for="NombreCompleto">Nombre Completo</label>                        
+                        <input type="text" class="form-control" id="NombreCompleto" placeholder="NombreCompleto" />
+                    </div>
+                    <div class="form-group">
+                        <label for="Dirección">Direccion</label>
+                        <input type="text" class="form-control" id="Direccion" placeholder="Dirección" />
+                    </div>
+                    <div class="form-group">
+                        <label for="FechaNacimiento">Fecha Nacimiento</label>
+                        <input type="date" class="form-control" id="FechaNacimiento" placeholder="Fecha Nacimiento" />
+                    </div>
+                    <div class="form-group">
+                        <label for="TipoDocumento">Tipo Documento</label>
+                        <select id="TipoDocumento"  class="form-control" >
+                            
+                            
+                        </select>
+                        
+                    </div>
+                    <div class="form-group">
+                        <label for="NumeroDocumento">NumeroDocumento</label>
+                        <input type="text" class="form-control" id="NumeroDocumento" placeholder="Número Documento" />
+                    </div>
+                    <div class="form-group">
+                        <label for="Pais">Pais</label>
+                        <input type="text" class="form-control" id="Pais" placeholder="Pais" />
+                    </div>
+                    <div class="form-group">
+                        <label for="Departamento">Departamento</label>
+                        <input type="text" class="form-control" id="Departamento" placeholder="Departamento" />
+                    </div>
+                    <div class="form-group">
+                        <label for="Ciudad">Ciudad</label>
+                        <input type="text" class="form-control" id="Ciudad" placeholder="Ciudad" />
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="btnAdd" onclick="return Add();">Guardar</button>
+                <button type="button" class="btn btn-primary" id="btnUpdate" style="display:none;" onclick="Update();">Actualizar</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,9 @@
+c:\users\nsilva\documents\visual studio 2015\Projects\AdminitracionUsuarios\AdministracionUsuarios.WcfService\bin\AdministracionUsuarios.WcfService.dll.config
+c:\users\nsilva\documents\visual studio 2015\Projects\AdminitracionUsuarios\AdministracionUsuarios.WcfService\bin\AdministracionUsuarios.WcfService.dll
+c:\users\nsilva\documents\visual studio 2015\Projects\AdminitracionUsuarios\AdministracionUsuarios.WcfService\bin\AdministracionUsuarios.WcfService.pdb
+c:\users\nsilva\documents\visual studio 2015\Projects\AdminitracionUsuarios\AdministracionUsuarios.WcfService\obj\Debug\AdministracionUsuarios.WcfService.dll
+c:\users\nsilva\documents\visual studio 2015\Projects\AdminitracionUsuarios\AdministracionUsuarios.WcfService\obj\Debug\AdministracionUsuarios.WcfService.pdb
+c:\users\nsilva\documents\visual studio 2015\Projects\AdminitracionUsuarios\AdministracionUsuarios.WcfService\bin\EntityFramework.dll
+c:\users\nsilva\documents\visual studio 2015\Projects\AdminitracionUsuarios\AdministracionUsuarios.WcfService\bin\EntityFramework.xml
+c:\users\nsilva\documents\visual studio 2015\Projects\AdminitracionUsuarios\AdministracionUsuarios.WcfService\bin\EntityFramework.SqlServer.dll
+c:\users\nsilva\documents\visual studio 2015\Projects\AdminitracionUsuarios\AdministracionUsuarios.WcfService\bin\EntityFramework.SqlServer.xml
